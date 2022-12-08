@@ -1,0 +1,30 @@
+{
+    "name": "klnjmm/template",
+    "description": "My template for PHP project",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": "~8.1"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.4",
+        "pestphp/pest": "^1.21",
+        "infection/infection": "^0.26.15"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "infection/extension-installer": true
+        }
+    }
+}
